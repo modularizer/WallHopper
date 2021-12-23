@@ -2,8 +2,9 @@
 Bypass article paywalls with one line of javascript code:
 
     fetch(location.href).then(r=>r.text()).then(r=>document.body.outerHTML=r)
-    
-which can be executed in the address bar as:
+
+which can be executed in the address bar as
+
     javascript:fetch(location.href).then(r=>r.text()).then(r=>document.body.outerHTML=r)
 
 ## Ways to Execute
