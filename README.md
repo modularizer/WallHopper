@@ -22,6 +22,14 @@ which can be executed in the address bar as
 3. Paste the following `fetch(location.href).then(r=>r.text()).then(r=>document.body.outerHTML=r)`
 4. Press `Enter`
 
+### Using Bookmarks Bar
+1. Navigate to Bookmarks Manager `Ctrl+Shift+O`
+2. Click options menu on top right of screen and select "Add New Bookmark"
+3. Add bookwark with the url as 
+	javascript:fetch(location.href).then(r=>r.text()).then(r=>document.body.outerHTML=r)
+
+4. Click this bookmark to bypass soft paywalls
+
 ## Explanation
 Many webpages use "soft" paywalls in which the article or content is sent to the browser and then blocked or blurred by javascript. Because the host server is publicly distributing the article content, reading it is as simple as preventing the javascript from blurring the article which has already been sent to our browser. This could be done many ways: disabling javascript in browser, using the F8 key to pause script execution at exactly the right time, etc. The method here is to perform an http request to fetch the content of the webpage, then replace the html of the page with the html returned by the web request.
 
