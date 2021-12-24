@@ -26,7 +26,7 @@ which can be executed in the address bar as
 1. Navigate to Bookmarks Manager `Ctrl+Shift+O`
 2. Click options menu on top right of screen and select "Add New Bookmark"
 3. Add bookwark with the url as 
-	javascript:fetch(location.href).then(r=>r.text()).then(r=>document.body.outerHTML=r)
+	`javascript:fetch(location.href).then(r=>r.text()).then(r=>document.body.outerHTML=r)`
 
 4. Click this bookmark to bypass soft paywalls
 
